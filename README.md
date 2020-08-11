@@ -14,4 +14,5 @@ Aug. 2020
 | Id | Name | Date |
 |:---:| :------: | :----: |
 | 2 | Add Two Numbers | 8/12 |
+| 21 | Merge Two Sorted Lists | 8/12 |
 | 23 | Merge k Sorted Lists | 8/12 |
