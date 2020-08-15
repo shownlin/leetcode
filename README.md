@@ -16,3 +16,15 @@ Aug. 2020
 | 2 | Add Two Numbers | 8/12 |
 | 21 | Merge Two Sorted Lists | 8/12 |
 | 23 | Merge k Sorted Lists | 8/12 |
+
+# Dynamic Programming
+
+| Id | Name | Date |
+|:---:| :------: | :----: |
+| 887 | Super Egg Drop | 8/14 |
+
+# String
+
+| Id | Name | Date |
+|:---:| :------: | :----: |
+| 1542 | 1542. Find Longest Awesome Substring | 8/15 |
