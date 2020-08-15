@@ -27,4 +27,5 @@ Aug. 2020
 
 | Id | Name | Date |
 |:---:| :------: | :----: |
-| 1542 | 1542. Find Longest Awesome Substring | 8/15 |
+| 1542 | Find Longest Awesome Substring | 8/15 |
+| 1457 | Pseudo-Palindromic Paths in a Binary Tree | 8/16 |
