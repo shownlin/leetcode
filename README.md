@@ -29,3 +29,8 @@ Aug. 2020
 |:---:| :------: | :----: |
 | 1542 | Find Longest Awesome Substring | 8/15 |
 | 1457 | Pseudo-Palindromic Paths in a Binary Tree | 8/16 |
+
+# Bit Operation
+| Id | Name | Date |
+|:---:| :------: | :----: |
+| 190 | Reverse Bits | 10/17 |
