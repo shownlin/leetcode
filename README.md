@@ -8,6 +8,7 @@ Aug. 2020
 | Id | Name | Date |
 |:---:| :------: | :----: |
 | 1 | Two Sum | 8/11 |
+| 560 | Subarray Sum Equals K | 10/30 |
 
 # Linked List
 
@@ -31,6 +32,8 @@ Aug. 2020
 | 1457 | Pseudo-Palindromic Paths in a Binary Tree | 8/16 |
 
 # Bit Operation
+
 | Id | Name | Date |
 |:---:| :------: | :----: |
 | 190 | Reverse Bits | 10/17 |
+

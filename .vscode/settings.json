@@ -3,6 +3,7 @@
         "functional": "cpp",
         "vector": "cpp",
         "iostream": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "tuple": "cpp"
     }
 }
