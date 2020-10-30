@@ -4,6 +4,12 @@
         "vector": "cpp",
         "iostream": "cpp",
         "unordered_map": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "thread": "cpp",
+        "mutex": "cpp",
+        "utility": "cpp",
+        "chrono": "cpp",
+        "xstring": "cpp",
+        "future": "cpp"
     }
 }
