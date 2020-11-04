@@ -48,3 +48,14 @@ Aug. 2020
 | 1114 | Print in Order | 10/30 |
 | 1115 | Print FooBar Alternately | 10/30 |
 | 1116 | Print Zero Even Odd | 10/30 |
+
+# Tree
+| Id | Name | Date |
+|:---:| :------: | :----: |
+| 303 | Range Sum Query - Immutable | 11/4 |
+| 307 | Range Sum Query - Mutable | 11/4 |
+
+# Other
+| Id | Name | Date |
+|:---:| :------: | :----: |
+| 303 | Range Sum Query - Immutable| 11/3 |

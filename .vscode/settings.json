@@ -10,6 +10,9 @@
         "utility": "cpp",
         "chrono": "cpp",
         "xstring": "cpp",
-        "future": "cpp"
+        "future": "cpp",
+        "xutility": "cpp",
+        "array": "cpp",
+        "ostream": "cpp"
     }
 }
