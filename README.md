@@ -59,4 +59,5 @@ Aug. 2020
 # Other
 | Id | Name | Date |
 |:---:| :------: | :----: |
-| 303 | Range Sum Query - Immutable| 11/3 |
+| 303 | Range Sum Query - Immutable | 11/3 |
+| 56 | Merge Intervals | 11/7 |
