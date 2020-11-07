@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <tuple>
+#include <memory>
 
 using namespace std;
 
@@ -188,30 +189,118 @@ T merge(T & a, T & b)
     return a + b;
 }
 
+/*
+* 線段樹之實作，採用linked-list
+*/
+class Node
+{
+public:
+    int start;
+    int end;
+    int sum;
+    Node *left;
+    Node *right;
+    Node(int _start, int _end, int _sum, Node *_left = nullptr, Node *_right = nullptr) : start(_start), end(_end), sum(_sum), left(_left), right(_right) {}
+
+    // = delete的用意是告訴compiler下面這兩個：複製建構子、賦值運算子不可以被使用
+    Node(const Node &) = delete;
+    Node &operator=(const Node &) = delete;
+
+    ~Node()
+    {
+        delete left;
+        delete right;
+        left = right = nullptr;
+    }
+};
+
+class segmentTree_link
+{
+private:
+    unique_ptr<Node> head;
+
+    Node *buildTree(int start, int end, vector<int> &data)
+    {
+        if (start == end)
+            return new Node(start, end, data[start]);
+        int mid = start + (end - start) / 2;
+        auto left = buildTree(start, mid, data);
+        auto right = buildTree(mid + 1, end, data);
+        return new Node(start, end, left->sum + right->sum, left, right);
+    }
+
+    void update(Node *root, int i, int val)
+    {
+        if (root->start == i && root->end == i)
+        {
+            root->sum = val;
+            return;
+        }
+        int mid = root->start + (root->end - root->start) / 2;
+        if (i <= mid)
+            update(root->left, i, val);
+        else
+            update(root->right, i, val);
+        root->sum = root->left->sum + root->right->sum;
+    }
+
+    int query(Node *root, int i, int j)
+    {
+        if (i == root->start && j == root->end)
+            return root->sum;
+        int mid = root->start + (root->end - root->start) / 2;
+        if (j <= mid)
+            return query(root->left, i, j);
+        else if (i > mid)
+            return query(root->right, i, j);
+
+        return query(root->left, i, mid) + query(root->right, mid + 1, j);
+    }
+
+public:
+    segmentTree_link(vector<int> &data)
+    {
+        if (data.size() != 0)
+            head.reset(buildTree(0, data.size() - 1, data));
+    }
+
+    void set(int i, int val)
+    {
+        update(head.get(), i, val);
+    }
+
+    int query(int i, int j)
+    {
+        return query(head.get(), i, j);
+    }
+};
 
 class NumArray
 {
 private:
     // segmentTree<int> seg;
-    fenwickTree<int> fenwick;
+
+    // fenwickTree<int> fenwick;
+
+    segmentTree_link seg;
 
 public:
-    NumArray(vector<int> &nums) : fenwick{nums} // seg{nums, merge}
+    NumArray(vector<int> &nums) : seg{nums} // fenwick{nums} // seg{nums, merge}
     {
-        fenwick.print();
+        // fenwick.print();
     }
 
     void update(int i, int val)
     {
-        // seg.set(i, val);
-        fenwick.update(i, val);
-        // fenwick.print();
+        seg.set(i, val);
+
+        // fenwick.update(i, val);
     }
 
     int sumRange(int i, int j)
     {
-        // return seg.query(i, j);
-        return fenwick.query(i, j);
+        return seg.query(i, j);
+        // return fenwick.query(i, j);
     }
 };
 

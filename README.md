@@ -54,6 +54,7 @@ Aug. 2020
 |:---:| :------: | :----: |
 | 303 | Range Sum Query - Immutable | 11/4 |
 | 307 | Range Sum Query - Mutable | 11/4 |
+| 850 | Rectangle Area II | 11/7 |
 
 # Other
 | Id | Name | Date |
