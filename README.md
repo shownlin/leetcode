@@ -36,6 +36,7 @@ Aug. 2020
 | Id | Name | Date |
 |:---:| :------: | :----: |
 | 190 | Reverse Bits | 10/17 |
+| 1558 | Minimum Numbers of Function Calls to Make Target Array | 11/8 |
 
 # Math
 | Id | Name | Date |
