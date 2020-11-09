@@ -62,3 +62,4 @@ Aug. 2020
 |:---:| :------: | :----: |
 | 303 | Range Sum Query - Immutable | 11/3 |
 | 56 | Merge Intervals | 11/7 |
+| 46 | Permutations | 11/9 |

@@ -19,8 +19,8 @@ int minOperations(int *nums, int numsSize)
     }
 
     int double_time = (maximum > 0) ? (sizeof(int) << 3) - 1 - __builtin_clz(maximum) : 0;
-    printf("%d\n", maximum);
-    printf("%d + %d + %d = %d\n", double_time, cnt, numsSize, double_time + cnt);
+    // printf("%d\n", maximum);
+    // printf("%d + %d + %d = %d\n", double_time, cnt, numsSize, double_time + cnt);
     return double_time + cnt;
 }
 
