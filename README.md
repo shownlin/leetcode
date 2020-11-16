@@ -44,6 +44,11 @@ Aug. 2020
 |:---:| :------: | :----: |
 | 263 | Ugly Number | 10/30 |
 
+# Graph
+| Id | Name | Date |
+|:---:| :------: | :----: |
+| 529 | Minesweeper | 11/17 |
+
 # Concurrency
 | Id | Name | Date |
 |:---:| :------: | :----: |
