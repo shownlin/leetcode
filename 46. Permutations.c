@@ -46,6 +46,8 @@ void sub_permute(int **ans, int *cnt, int *nums, int i, int n)
 }
 
 // returnColumnSizes用來指定每一列的行寬，是一個一維陣列，但是用pointer to pointer包起來，要自己malloc裡面那一層
+// 為什麼要用pointer to pointer的理由：
+// 因為returnColumnSizes本身是call by value，如果直接對returnColumnSizes進行malloc並不會真正改變caller手上的那個指針
 int **permute(int *nums, int numsSize, int *returnSize, int **returnColumnSizes)
 {
     int num_per = calPermuteSize(numsSize);

@@ -23,6 +23,7 @@ Aug. 2020
 | Id | Name | Date |
 |:---:| :------: | :----: |
 | 887 | Super Egg Drop | 8/14 |
+| 53 | Maximum Subarray | 11/15 |
 
 # String
 
@@ -49,6 +50,7 @@ Aug. 2020
 | 1114 | Print in Order | 10/30 |
 | 1115 | Print FooBar Alternately | 10/30 |
 | 1116 | Print Zero Even Odd | 10/30 |
+| 1995 | Fizz Buzz Multithreaded | 11/16 |
 
 # Tree
 | Id | Name | Date |
@@ -63,3 +65,4 @@ Aug. 2020
 | 303 | Range Sum Query - Immutable | 11/3 |
 | 56 | Merge Intervals | 11/7 |
 | 46 | Permutations | 11/9 |
+| 88 | Merge Sorted Array | 11/16 |
